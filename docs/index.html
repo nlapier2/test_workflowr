@@ -296,7 +296,7 @@ $(document).ready(function () {
 <p>
 <button type="button" class="btn btn-default btn-workflowr btn-workflowr-report" data-toggle="collapse" data-target="#workflowr-report">
 <span class="glyphicon glyphicon-list" aria-hidden="true"></span>
-workflowr <span class="glyphicon glyphicon-exclamation-sign text-danger"
+workflowr <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span>
 </button>
 </p>
@@ -307,8 +307,8 @@ aria-hidden="true"></span>
 </li>
 <li>
 <a data-toggle="tab" href="#checks"> Checks <span
-class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> </a>
+class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span>
+</a>
 </li>
 <li>
 <a data-toggle="tab" href="#versions">Past versions</a>
@@ -321,9 +321,9 @@ aria-hidden="true"></span> </a>
 </p>
 <p>
 <strong>Checks:</strong> <span
-class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 1
+class="glyphicon glyphicon-ok text-success" aria-hidden="true"></span> 2
 <span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> 1
+aria-hidden="true"></span> 0
 </p>
 <p>
 <strong>Knit directory:</strong> <code>test_workflowr/</code> <span
@@ -346,36 +346,33 @@ versions</em> tab lists the development history.
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguncommittedchanges">
-<span class="glyphicon glyphicon-exclamation-sign text-danger"
-aria-hidden="true"></span> <strong>R Markdown file:</strong> uncommitted
-changes </a>
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRMarkdownfilestronguptodate">
+<span class="glyphicon glyphicon-ok text-success"
+aria-hidden="true"></span> <strong>R Markdown file:</strong> up-to-date
+</a>
 </p>
 </div>
-<div id="strongRMarkdownfilestronguncommittedchanges"
+<div id="strongRMarkdownfilestronguptodate"
 class="panel-collapse collapse">
 <div class="panel-body">
-<p>The R Markdown file has unstaged changes. To know which version of
-the R Markdown file created these results, you’ll want to first commit
-it to the Git repo. If you’re still working on the analysis, you can
-ignore this warning. When you’re finished, you can run
-<code>wflow_publish</code> to commit the R Markdown file and build the
-HTML.</p>
+<p>Great! Since the R Markdown file has been committed to the Git
+repository, you know the exact version of the code that produced these
+results.</p>
 </div>
 </div>
 </div>
 <div class="panel panel-default">
 <div class="panel-heading">
 <p class="panel-title">
-<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomnlapier2testworkflowrtreefbe118366f8d987a413e6f9b07707489a6c2c9actargetblankfbe1183a">
+<a data-toggle="collapse" data-parent="#workflowr-checks" href="#strongRepositoryversionstrongahrefhttpsgithubcomnlapier2testworkflowrtree1f53fe74ea2681ad2986f09c64466f48d02750b2targetblank1f53fe7a">
 <span class="glyphicon glyphicon-ok text-success"
 aria-hidden="true"></span> <strong>Repository version:</strong>
-<a href="https://github.com/nlapier2/test_workflowr/tree/fbe118366f8d987a413e6f9b07707489a6c2c9ac" target="_blank">fbe1183</a>
+<a href="https://github.com/nlapier2/test_workflowr/tree/1f53fe74ea2681ad2986f09c64466f48d02750b2" target="_blank">1f53fe7</a>
 </a>
 </p>
 </div>
 <div
-id="strongRepositoryversionstrongahrefhttpsgithubcomnlapier2testworkflowrtreefbe118366f8d987a413e6f9b07707489a6c2c9actargetblankfbe1183a"
+id="strongRepositoryversionstrongahrefhttpsgithubcomnlapier2testworkflowrtree1f53fe74ea2681ad2986f09c64466f48d02750b2targetblank1f53fe7a"
 class="panel-collapse collapse">
 <div class="panel-body">
 <p>
@@ -385,7 +382,7 @@ reproducibility.
 </p>
 <p>
 The results in this page were generated with repository version
-<a href="https://github.com/nlapier2/test_workflowr/tree/fbe118366f8d987a413e6f9b07707489a6c2c9ac" target="_blank">fbe1183</a>.
+<a href="https://github.com/nlapier2/test_workflowr/tree/1f53fe74ea2681ad2986f09c64466f48d02750b2" target="_blank">1f53fe7</a>.
 See the <em>Past versions</em> tab to see a history of the changes made
 to the R Markdown and HTML files.
 </p>
@@ -406,9 +403,6 @@ Ignored files:
 
 Untracked files:
     Untracked:  analysis/viridis.Rmd
-
-Unstaged changes:
-    Modified:   analysis/index.Rmd
 
 </code></pre>
 <p>
@@ -453,6 +447,40 @@ Message
 </tr>
 </thead>
 <tbody>
+<tr>
+<td>
+Rmd
+</td>
+<td>
+<a href="https://github.com/nlapier2/test_workflowr/blob/1f53fe74ea2681ad2986f09c64466f48d02750b2/analysis/index.Rmd" target="_blank">1f53fe7</a>
+</td>
+<td>
+Nathan LaPierre
+</td>
+<td>
+2022-08-31
+</td>
+<td>
+Updated with viridis example
+</td>
+</tr>
+<tr>
+<td>
+html
+</td>
+<td>
+<a href="https://rawcdn.githack.com/nlapier2/test_workflowr/1f53fe74ea2681ad2986f09c64466f48d02750b2/docs/index.html" target="_blank">1f53fe7</a>
+</td>
+<td>
+Nathan LaPierre
+</td>
+<td>
+2022-08-31
+</td>
+<td>
+Updated with viridis example
+</td>
+</tr>
 <tr>
 <td>
 html
